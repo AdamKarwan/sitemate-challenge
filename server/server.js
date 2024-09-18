@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import issuesRouter from "./routes/issuesRouter.js";
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -15,7 +16,7 @@ connection.once("open", () => {
 });
 
 // setup the routes
-app.arguments("/issues", issuesRouter);
+app.use("/issues", issuesRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
