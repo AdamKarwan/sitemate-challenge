@@ -49,12 +49,3 @@ The MongoDB data is stored in a Docker volume named `mongo-data`.
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-### Explanation
-- Added a title and description for the project.
-- Provided instructions on how to run the project using Docker Compose.
-- Listed the ports used by the client, server, and MongoDB.
-- Included additional information on stopping the application and the Docker volume used for MongoDB data.
-```
